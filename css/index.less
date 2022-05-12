@@ -1,0 +1,285 @@
+// 在 index.less 中导入 common.less文件
+// @import 导入的意思  可以把一个样式文件导入到另一个样式文件里，link是把样式文件引入到html页面里
+@import "common.less";
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f7f7;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.search-content {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 1.76rem;
+    background-color: #ffc001;
+    .classify {
+        width: .88rem;
+        height: 1.4rem;
+        margin: .22rem .5rem .14rem .48rem;
+        background: url(../images/classify.png) no-repeat;
+        background-size: .88rem 1.4rem;
+    }
+    .search {
+        flex: 1;
+        input {
+            width: 100%;
+            height: 1.32rem;
+            border: 0;
+            border-radius: .66rem;
+            margin-top: .24rem;
+            outline: none;
+            color: #999;
+            font-size: .4rem;
+            padding-left: .7rem;
+            background-color: #fff2cc;
+        }
+    }
+    .login {
+        width: 1.5rem;
+        height: 1.4rem;
+        font-size: .48rem;
+        color: #fff;
+        text-align: center;
+        line-height: 1.4rem;
+        margin: .2rem;
+    }
+}
+// banner部分
+.banner {
+    width: 15rem;
+    height: 7.36rem;
+    margin-top: 1.76rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+// 广告模块
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+// nav模块
+nav {
+    overflow: hidden;
+    width: 15rem;
+    margin: .2rem 0 0 0;
+    ul {
+        margin: 0;
+        li {
+            float: left;
+            width: 20%;
+            height: 2.8rem;
+            a {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                flex-direction: column;
+                font-size: .5rem;
+                color: #333;
+                text-align: center;
+                img {
+                    width: 1.64rem;
+                    height: 1.64rem;
+                    margin: .4rem auto -0.2rem;
+                }
+                span {
+                    display: block;
+                    margin: .2rem 0 0 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+.xsms {
+    width: 14.04rem;
+    height: 5.16rem;
+    margin: .6rem auto;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    background-color: #fff;
+    .xsms-left {
+        float: left;
+        width: 50%;
+        height: 5.16rem;
+        padding-left: .4rem;
+        box-sizing: border-box;
+        border-right: 1px solid #ccc;
+        h2 {
+            height: 1.16rem;
+            font-size: .56rem;
+            margin: 0;
+            line-height: 1.16rem;
+        }
+        p {
+            height: .6rem;
+            font-size: .52rem;
+            color: #999;
+            margin: 0;
+            line-height: .6rem;
+        }
+        .xsms-left-btn {
+            display: flex;
+            width: 100%;
+            height: 3.4rem;
+            a {
+                flex: 1;
+                display: block;
+                width: 100%;
+                height: 3.4rem;
+                text-align: center;
+
+                img {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-top: .2rem;
+                }
+                p {
+                    height: .56rem;
+                    margin: 0;
+                    color: #ff5500;
+                    margin-top: -0.2rem;
+                    
+                }
+            }
+        }
+    }
+    .xsms-right {
+        float: right;
+        width: 50%;
+        height: 5.16em;
+        box-sizing: border-box;
+        h2 {
+            height: 1.16rem;
+            font-size: .56rem;
+            margin: 0;
+            line-height: 1.16rem;
+        }
+        p {
+            height: .6rem;
+            font-size: .52rem;
+            color: #999;
+            margin: 0;
+            line-height: .6rem;
+        }
+        .xsms-left-btn {
+            display: flex;
+            width: 100%;
+            height: 3.4rem;
+            a {
+                flex: 1;
+                display: block;
+                width: 100%;
+                height: 3.4rem;
+                text-align: center;
+
+                img {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-top: .2rem;
+                }
+                p {
+                    height: .56rem;
+                    margin: 0;
+                    color: #ff5500;
+                    margin-top: -0.2rem;
+                    
+                }
+            }
+        }
+    }
+}
+// 为你推荐部分
+.tj {
+    height: 3.44rem;
+    margin-top: .2rem;
+    background-color: #fff;
+    ul {
+        display: flex;
+        margin: 0;
+        height: 3.44rem;
+        li {
+            flex: 1;
+            box-sizing: border-box;
+            text-align: center;
+            img {
+                width: 2rem;
+                height: 2rem;
+                margin: .4rem auto 0;
+            }
+            p {
+                font-size: .44rem;
+                color: #333;
+                margin: 0;
+            }
+            &:first-child {
+                width: 3.46rem;
+                height: 3.44rem;
+                padding: .94rem .36rem 0;
+                h1 {
+                    font-size: .64rem;
+                    margin: 0;
+                }
+                p {
+                    color: #999;
+                    font-size: .48rem;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+// 底部定位模块
+.dibu {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 2.02rem;
+    background-color: #fff;
+    ul {
+        display: flex;
+        margin: 0;
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            padding-top: .3rem;
+            img {
+                height: .96rem;
+                width: .96rem;
+            }
+            span {
+                color: #666;
+                font-size: .4rem;
+            }
+        }
+    }
+}
